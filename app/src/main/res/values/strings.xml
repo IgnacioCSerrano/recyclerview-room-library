@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CityProject</string>
+    <string name="iv_city">Ciudad</string>
+    <string name="tv_placeholder">Ciudad</string>
+    <string name="tv_description">Description</string>
+    <string name="iv_icon_star">Estrella</string>
+    <string name="iv_icon_delete">Borrar</string>
+    <string name="tv_score">Score</string>
+    <string name="et_nombre_hint">Nombre…</string>
+    <string name="et_link_hint">Enlace de imagen…</string>
+    <string name="et_descripcion_hint">Descripción…</string>
+    <string name="btn_preview">Icono vista previa</string>
+    <string name="btn_save">Icono guardar</string>
+    <string name="btn_cancel">Icono cancelar</string>
+    <string name="action_add_city">Nueva ciudad</string>
+</resources>

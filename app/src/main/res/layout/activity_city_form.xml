@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CityDialogFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewFoto"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/iv_city"
+            android:background="@drawable/image_view_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/et_nombre_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFoto" />
+
+        <EditText
+            android:id="@+id/editTextLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/et_link_hint"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toStartOf="@+id/btnPreview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+        <ImageButton
+            android:id="@+id/btnPreview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/btn_preview"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_local_see_24"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextLink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextLink" />
+
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/et_descripcion_hint"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLink" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@android:style/Widget.DeviceDefault.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:rating="2.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDescripcion" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/btn_save"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_save_24"
+            android:tint="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="16dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/btn_cancel"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_cancel_24"
+            android:tint="#F44336"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSave"
+            app:layout_constraintEnd_toStartOf="@+id/btnSave"
+            app:layout_constraintTop_toTopOf="@+id/btnSave" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
